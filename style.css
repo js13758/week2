@@ -1,0 +1,236 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*,*::before,*::after{
+    box-sizing:border-box;
+}
+img{
+    height:auto;
+    max-width: 100%;
+    vertical-align:middle;
+}
+a{
+    text-decoration:none;
+    color: inherit;
+    display:inline-block;
+}
+body{
+    line-height: 1.5;
+    font-family: "Bruno Ace SC", sans-serif;
+
+}
+/*layout*//*做class分類，之後比較好找*/
+.header{
+    background: #000000;
+    color: #D1D1D1;
+    padding: 40px 0px;
+}
+.nav{
+    display: flex;/*讓它並排*/
+    justify-content: space-between;/*主軸對齊:讓它自動設定寬度*/
+    align-items:center;/*交錯軸:垂直置中*/
+
+}
+/*component*/
+.btn{
+    padding: 12px 24px;
+    border-radius: 32px;
+}
+.btn-light{
+    background: white;
+    color: #000000;
+}
+.btn-dark{
+    background: #000000;
+    color: #ffffff;
+}
+/*pages*//*只有這頁會出現的設定*/
+.banner{
+    background: #000000;
+    color: white;
+}
+.name{
+    color: #00FFA3;
+}
+.name-title{
+    display:block;
+    text-align:right;
+}
+.intro-word{
+    width: 526px;
+
+}
+.intro{
+    background-image: url(img/2023week2/background-img.png);
+    background-repeat:no-repeat;/*圖片就不會重複*/
+    background-size:cover;
+    /*預設是contain:圖片盡量會呈現在範圍裡面*/
+    /*這裡設定cover:圖片會盡量填滿容器*/
+    color: white;
+    padding: 160px 0px;
+}
+.about{
+    padding: 160px 0px;
+
+}
+.about-list{
+    width: 636px;
+    flex-wrap: wrap;
+    gap: 24px;/*在項目之間做出空間*/
+}
+.about-list li{
+    width:calc(50% - 12px);/*24/2=12px,推空間方法*/
+    box-shadow: 4px 4px 4px 0px #00000014;
+    border: 1px solid #E3E3E3;
+    padding: 16px;
+
+}
+.about-word{
+    width: 526px;
+}
+.about-card{
+    font-size: 20px;
+    padding-bottom: 4px;
+}
+.contact{
+    background: linear-gradient(180deg, #050014 0%, rgba(1, 2, 30, 0.89) 100%);
+    padding: 96px 0px;
+    color: white;
+
+
+}
+.social-link{
+    border-radius: 40px;
+    transition: 1s;
+
+}
+.social-link:hover{
+    box-shadow: 0px 0px 16px 3px #9094FFE5;
+    
+}
+.project{
+    padding: 160px 0px;
+
+}
+.pj-title{
+    width: 746px;
+    margin-left:auto;
+}
+.footer{
+    text-align:center;
+    padding: 40px 0px;
+    background: #000000;
+    color: #FFFFFF;
+}
+
+
+/*utils*/
+.container{
+    width: 1296px;
+    margin:0 auto;
+}
+.h1{
+    font-size: 128px;
+}
+.h2{
+    font-size: 64px;
+}
+.fs-1{
+    font-size: 32px;
+}
+.fs-2{
+    font-size: 24px;
+}
+.fs-3{
+    font-size: 20px;
+}
+.d-flex{
+    display: flex;
+}
+.aic{
+    align-items:center;
+}
+.ais{
+    align-items:start;
+    /*align-items:stretch是預設值，是找容器裡最高高度的元素，讓其他元素也一起配合高度。用start就會置頂對齊了*/
+}
+.jcfe{
+    justify-content: flex-end;
+}
+.jcsb{
+    justify-content: space-between;
+}
+.fdc{
+    flex-direction: column;
+    /*預設是row水平，但因flex改變，軸向變垂直*/
+}
+.pl-6{
+    padding-left: 24px;
+}
+.mb-8{
+    margin-bottom: 32px;
+}
+.mt-auto{
+    margin-top: auto;
+}
+
+.pb-9{
+    padding-bottom:36px;
+}
+.pb-7{
+    padding-bottom: 28px;
+}
+.pr-4{
+    padding-right: 16px;
+}
+.pr-5{
+    padding-right: 20px;
+}
+.pr-6{
+    padding-right:24px;
+}
+
